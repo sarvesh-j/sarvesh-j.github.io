@@ -6,25 +6,36 @@
 -->
 <html>
 	<head>
-		<title>Sarvesh Portfolio</title>
+		<title>Sarvesh's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+<!---styles-->
+<style>
+	div.box {
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+</style>
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
+							
 							<span class="icon fa-star"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Sarvesh Portfolio</h1>
+								<h1>Sarvesh's <br> Portfolio</h1>
 								<p>
 									HI! I AM SARVESH, AND I RECENTLY GRADUATED  WITH A B.TECH IN AEROSPACE ENGINEERING FROM ACS COLLEGE OF ENGINEERING. I AM WILLING TO PURSUE MASTERS (MSC) IN AEROSPACE ENGINEERING TO SATISFY MY CURIOSITY AND LOVE FOR RESEARCH.
 								</p>
@@ -54,10 +65,10 @@
 							<article id="Project">
 								<h2 class="major">Project</h2>
 								<h3 class="major">Electric Propulsion System for CubeSats</h3>
-								<a href= "data/1AH17AS029(Sarvesh)- Project Report.pdf" download="Project Report">Download Project Report</a>
-								<p></p>
+								<a href= "data/1AH17AS029(Sarvesh)- Project Report.pdf" download="Project Report"> Click here to Download Project Report</a>
+<p></p>
 								<p>Design and analysis of a Pulsed Plasma Thruster(PPT) integrated into a 3U CubeSat. CubeSat's lack a propulsive device, therefore their mission life is limited. We can extend the lifetime of CubeSats by using thrusters, which can also be employed to maintain the orbit and increase its orbit.</p>
-								<p>Modal analysis and Random vibrations testing were performed on the CubeSat frame and with the thrusters mounted inside CubeSat. There are a total of 8 thrusters that are used to control and also achieve three-axis control.</p>
+								<p>Modal analysis and Random vibrations testing were performed on the CubeSat frame and with the thrusters mounted inside CubeSat. There are a total of 8 thrusters that are used to control and also achieve three-axis control. PTFE(Teflon) is used as the propellant, two Copper strips are used which act as electrodes.</p>
 								
 								<span class="image main"><img src="images/ppic1.png" alt="" /></span>
 <h4 class="major">Orbital transfer using finite burn type maneuver</h4>
@@ -85,6 +96,10 @@
 										<th>14 grams</th>
 									</tr>
 								</table>
+								<p> <h5 class="major">Apogee Raise condition</h5>
+									Initial : 9 Jun 2021 18:30:00.000 UTCG <br>
+									Final : 17 Sep 2021 18:30:00.000 UTCG
+									</p>
 								<table>
 									<tr>
 										<th>Perigee Raise condition</th>
@@ -103,12 +118,9 @@
 										<th>14 grams</th>
 									</tr>
 								</table>
-								<p> <h5 class="major">Apogee Raise condition</h5>
-									Initial : 9 Jun 2021 18:30:00.000 UTCG; 
-									Final : 17 Sep 2021 18:30:00.000 UTCG
-									</p>
+								
 									<p> <h5 class="major">Peigee Raise condition</h5>
-										Initial : 17 Sep 2021 18:30:00.000 UTCG;
+										Initial : 17 Sep 2021 18:30:00.000 UTCG<br>
 										Final : 26 Dec 2021 18:30:00.000 UTCG
 										
 									</p>
@@ -118,10 +130,119 @@
 									
 								</video>
 								<p>Solar Panel tool in STK</p>
-								<span class=" image main"><img src="images/Solar panel test results at 20deg inclination.jpg" alt="" /> </span>
-							<p>Solar panel power profile at 20 degree inclination of CubeSat</p>
+								<span class="image main"><img src="images/Solar panel test results at 20deg inclination.png" alt="" /><p>Solar panel power profile at 20 degree inclination of CubeSat</p> </span>
+							
 							<p>The maximum power produced by all the solar panels was around 9.117 (W), the solar panels Minus X and Minus Y produced the most power compared to the other two panel groups. The maximum power produced by the Minus Y panel was around 6.513 (W), whereas the Minus X panel produced maximum power of around 6.512 (W). The power produced by the Plus X panel was maximum at the beginning which was about 2.813 (W)  but the power remained constant during the period where the panel was not eclipsed. The power range was about 2.813 (W) – 2.787 (W). </p>
-							</article>
+						<h4 class="major">Modal Analysis and Random Vibrations test </h4>	
+						<p>
+							Modal analysis is used to determine the vibration characteristics of linear elastic structures.It
+							is also the typical common dynamic simulation for many other dynamic simulations. Modal
+							analysis looks for natural frequencies and normal modes of a structure. Natural frequencies
+							and modes are some of the most important properties of a structure; they determine how the
+							structure will respond.<br><br>
+							Random vibrations test investigates the structural response to acoustic noise due to engine vibration and
+							noise, air friction at the beginning of the launch phase. The instantaneous magnitude of the
+							response is not constant over time due to several possible frequencies exert on the structure at
+							the same time. Therefore, the problem should consider in a statistical and probability
+							distribution approach before transforming to frequency domain. The Acceleration Spectral
+							Density (ASD) also known as Power Spectral Density (PSD) is a statistical measure of the
+							structure response to random dynamic loads. It is a graph of the PSD versus frequencies in
+							which PSD can be displacement, velocity, acceleration, or force. In case of acceleration the
+							unit can be presented in ((g2/Hz)/Hz).
+
+
+
+						</p>
+						<table>
+								<tr>
+									<th>Mode</th>
+									<th>Frequency (Hz)</th>
+								</tr>
+								<tr>
+									<th>1.</th>
+									<th>277.91</th>
+								</tr>
+								<tr>
+									<th>2.</th>
+									<th>290.16</th>
+								</tr>
+								<tr>
+									<th>3.</th>
+									<th>552.27</th>
+								</tr>
+								<tr>
+									<th>4.</th>
+									<th>556.86</th>
+								</tr>
+								<tr>
+									<th>5.</th>
+									<th>567.26</th>
+								</tr>
+								<tr>
+									<th>6.</th>
+									<th>598.43</th>
+								</tr>
+								<tr>
+									<th>7.</th>
+									<th>809.3
+									</th>
+								</tr>
+								<tr>
+									<th>8.</th>
+									<th>851.35</th>
+								</tr>
+								<tr>
+									<th>9.</th>
+									<th>1064.4</th>
+								</tr>
+								<tr>
+									<th>10.</th>
+									<th>1546.9</th>
+								</tr>
+								
+							</table>
+							<span class="=image main" ><img src="images/mode shapes.png" alt=""/></span>
+							<p>Graph: Mode shapes</p>
+							
+							<span class="image main" ><img src="images/mode shapes 1 and 2.png" alt=""/> <p>1st and 2nd Mode shapes</p></span>
+							
+							
+								
+							<span class="image main" ><img src="images/mode shapes 9 and 10.png" alt=""/><p>9th and 10th Mode shapes</p></span>
+							<span class="image main" ><img src="images/RV along X axis.png" alt=""/><p>Random Vibration along X-axis and Y-axis</p></span>
+						
+							<table>
+								<tr>
+									<th>
+										<li>X - Axis</li>
+										<li>(Probability) 3 sigma – 99.73 %</li>
+										<li>Max Deformation = 0.28844 mm</li>	
+
+									</th>
+									<th><li>	Y - Axis </li>
+										<li>(Probability) 3 sigma – 99.73 %</li>
+										<li>Max Deformation = 0.020682 mm</li>
+
+									</th>
+								</tr>
+							</table>
+							<span class="image main" ><img src="images/RV along X axis and Equivalent stress.png" alt=""/><p>Random Vibration along Z-axis and Equivalent stress</p></span>	
+							<table>
+								<tr>
+									<th>
+										<li>Z - Axis</li>
+										<li>(Probability) 3 sigma – 99.73 %</li>
+										<li>Max Deformation = 0.050306 mm</li>	
+
+									</th>
+									<th><li>	Equivalent stresses X - Axis </li>
+										<li>(Probability) 3 sigma – 99.73 %</li>
+										<li>Max Stress = 224.33 MPa</li>
+
+									</th>
+								</tr>
+							</table>
+						</article>
 
 						<!-- Certificates -->
 							<article id="Certificates">
@@ -152,8 +273,20 @@
 										
 									
 									</p>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								</article>
+									<h3 class="major">AGI:STK (Systems Tool Kit)</h3>
+									<a href= "data/STK certificate.pdf" download="STK certificate">Click here to Download Certificate</a><p></p>
+									
+									<span class="image main"><img src="images/STK image.png" alt="" /></span>
+									<p>Systems Tool Kit (STK) is a platform for analyzing and visualizing complex systems in the context of your mission. Interact with data from platforms across the aerospace, defense, telecommunications, and other industries. Simulate your intended missions and communicate the results with reports, graphs, and stunning 3D animations.</p>
+									<h3 class="major">Workshops</h3>
+									
+									<a href="data/Aerovision 2019 Workshop certificate.pdf" Downaload=" Aerovision Workshop">Click here to Downaload Certificate</a>
+									<p>Aerovision held at NMIT(Nitte Meenakshi Institute of Technology</p>
+									<a href="data/one day workshop.pdf" Download="VTU Awareness Course Aerospace"> Click here to Downaload Certificate</a>
+									<p>Awareness Course on Aerospace Engineering</p>
+									
+								
+							</article>
 
 						<!-- About -->
 							<article id="about">
