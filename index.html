@@ -69,7 +69,7 @@
 								<a href= "data/1AH17AS029(Sarvesh)- Project Report.pdf" download="Project Report"> Click here to Download Project Report</a>
 <p></p>
 								<p>Design and analysis of a Pulsed Plasma Thruster(PPT) integrated into a 3U CubeSat. CubeSat's lack a propulsive device, therefore their mission life is limited. We can extend the lifetime of CubeSats by using thrusters, which can also be employed to maintain the orbit and increase its orbit.</p>
-								<p>Modal analysis and Random vibrations testing were performed on the CubeSat frame and with the thrusters mounted inside CubeSat. There are a total of 8 thrusters that are used to control and also achieve three-axis control. PTFE(Teflon) is used as the propellant, two Copper strips are used which act as electrodes.</p>
+								<p>Modal analysis and Random vibrations testing were performed on the CubeSat frame and with the thrusters mounted inside CubeSat. There are a total of 8 thrusters that are used for orbit transfer and also achieve three-axis control. PTFE(Teflon) is used as the propellant, two tungsten plated copper are used which act as electrodes.</p>
 								
 								<span class="image main"><img src="images/ppic1.png" alt="" /></span>
 <h4 class="major">Orbital transfer using finite burn type maneuver</h4>
@@ -102,6 +102,7 @@
 									Initial : 9 Jun 2021 18:30:00.000 UTCG <br>
 									Final : 17 Sep 2021 18:30:00.000 UTCG
 									</p>
+									<span class="image main"><img src="images/Finite_burn_1.PNG" alt="" /><p> Apogee Raise </p></span>
 									<p> <h5 class="major">Peigee Raise condition</h5>
 									<table>
 									<tr>
@@ -127,6 +128,7 @@
 										Final : 26 Dec 2021 18:30:00.000 UTCG
 										
 									</p>
+									<span class="image main"><img src="images/Perigee Raise.png" alt="" /><p>Perigee Raise</p></span>
 								<h4 class="major">Power Analysis (Solar Panel groups) </h4>
 								<video width="560" controls>
 									<source src= "videos/Solar panel 4th july.mp4" >
@@ -136,7 +138,25 @@
 								<span class="image main"><img src="images/Solar panel test results at 20deg inclination.png" alt="" /><p>Solar panel power profile at 20 degree inclination of CubeSat</p></span>
 							
 							<p>The maximum power produced by all the solar panels was around 9.117 (W), the solar panels Minus X and Minus Y produced the most power compared to the other two panel groups. The maximum power produced by the Minus Y panel was around 6.513 (W), whereas the Minus X panel produced maximum power of around 6.512 (W). The power produced by the Plus X panel was maximum at the beginning which was about 2.813 (W)  but the power remained constant during the period where the panel was not eclipsed. The power range was about 2.813 (W) – 2.787 (W). </p>
-						<h4 class="major">Modal Analysis and Random Vibrations test </h4>	
+							<h4 class="major">Lifetime Analysis </h4>
+							<p>*The CubeSat is considered to be in high drag condition*<br>
+							Lifetime analysis was performed using STK's in-built Lifetime analysis tool. </p>
+							<h5 class="major">Case 1: Lifetime of CubeSat without thrusters</h5>
+							<p>Altitude: 400Km<br>
+								Estimated Lifetime: 1.2 years<br>
+								Orbit Epoch: 4 Jul 2021 6:30:00.000 UTCG <br>
+								The CubeSat is estimated to decay on 12th September 2022 at 01:56:04.904 after 6855 orbits.
+								</p>
+								<span class="image main"><img src="images/Graph 400km.PNG" alt="" /><p> Lifetime Analysis of CubeSat at 400km </p></span>
+								<h5 class="major">Case 2: Lifetime of CubeSat with thrusters</h5>
+								<p> The CubeSat's orbit rose from 400km to higher orbit with an Apogee of 535 km and Perigee of 515 km because of Orbit transfer using Finite manoeuvre.</p>
+									<p>Altitude: 515 km- 535 km<br>
+									Estimated Lifetime: 4.7 years<br>
+									Orbit Epoch: 4 Jul 2021 6:30:00.000 UTCG <br>
+									The CubeSat is estimated to decay on 2nd March 2026 at 01:48:38.409 after 26134 orbits
+									</p>
+									<span class="image main"><img src="images/PPT_final graph.png" alt="" /><p> Lifetime Analysis of CubeSat at higher orbit achieved using PPT's </p></span>
+								<h4 class="major">Modal Analysis and Random Vibrations test </h4>	
 						<p>
 							Modal analysis is used to determine the vibration characteristics of linear elastic structures.It
 							is also the typical common dynamic simulation for many other dynamic simulations. Modal
