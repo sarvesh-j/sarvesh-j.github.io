@@ -12,14 +12,18 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 		
 	</head>
 	<body class="is-preload">
-
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
+				
 <!---styles-->
+
 <style>
+
 	div.box {
 		text-align: center;
 	}
@@ -28,7 +32,9 @@
 		margin: 0 auto;
 	}
 </style>
-				<!-- Header -->
+<style>model-viewer {width: 800px; height:600px; margin:0, auto} 
+</style>
+		<!-- Header -->
 					<header id="header">
 						<div class="logo">
 							
@@ -36,16 +42,18 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>MY Portfolio</h1>
-								<p>
-									Hi! I'm Sarvesh, and I recently graduated with a B.tech in Aerospace Engineering , I'm passionate about spaceflight and rocketry. I am willing to pursue a master's (MSc) in Aerospace Engineering to satisfy my curiosity and love for research.
+								<h1>Portfolio</h1>
+								<h3></h3>
+								<p style="text-transform: none;">
+									Welcome to my portfolio! I'm Sarvesh, an aspiring aerospace engineer currently pursuing my MSc in Aerospace at TUM (Technical University of Munich). <br> With a deep passion for space exploration and a relentless curiosity, I'm dedicated to pushing the boundaries of aerospace engineering. <br> Join me as I showcase my journey, projects, and achievements in this captivating field. Let's embark on an exhilarating adventure through the vastness of space and beyond!
 								</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#Resume">Resume</a></li>
-								<li><a href="#Project">Project</a></li>
+								<li><a href="#Projects">Project</a></li>
+						
 								<li><a href="#Certificates">Certificates</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
@@ -59,15 +67,56 @@
 						<!-- Resume-->
 						<article id="Resume">
 							<h2 class="major">Resume</h2>
-							<a href= "data/CV_Updated.pdf" download="CV">Click here to Download Resume</a><br>
-							<a href= "data/CV.pdf" download="CV">Click here to Download Resume (EUROPASS)</a>
+							<a href= "data/CV_Sarvesh_Jagadish.pdf" download="CV">Click here to Download Resume</a><br>
+							
 							</article>
-
-						<!-- Project -->
-							<article id="Project">
+							<!--Project-->
+							<article id="Projects">
+								<nav>
+									<ul class="project-list">
+										<li><a href="#BTech">
+											<div class="project-item"> Bachelor Thesis
+											<img src="images/cubesat.gif" alt="Project Thumbnail">
+											</div>
+											
+										</a>
+										</li>
+										<li>
+											<a href="#Visualization"> 
+												<div class="project-item">Brain Visualization
+													<img src="images/Brain.gif" alt="Project Thumbnail">
+												</div>
+												
+											</a>
+										</li>
+										<!--<li>
+											<a href="#BTech">
+											<div class="project-item">Nozzle
+											<img src="images/cubesat.jpg" alt="Project Thumbnail">
+											</div>
+											
+										</a>
+										</li>
+										<li>
+											<a href="#Visualization">
+												<div class="project-item"> Astrodynamics
+													<img src="images/Brain.gif" alt="Project Thumbnail">
+												</div>
+												
+											</a>
+										</li>-->
+									</ul>
+								</nav>
+							</article>
+						
+							<!-- B.Tech Project -->
+						
+						
+								<article id="BTech">
+								
 								<h2 class="major">Project</h2>
 								<h3 class="major">Electric Propulsion System for CubeSats</h3>
-								<a href= "data/1AH17AS029(Sarvesh)- Project Report.pdf" download="Project Report"> Click here to Download Project Report</a>
+								
 <p></p>
 								<p>Design and analysis of a Pulsed Plasma Thruster(PPT) integrated into a 3U CubeSat. CubeSat's lack a propulsive device, therefore their mission life is limited. We can extend the lifetime of CubeSats by using thrusters, which can also be employed to maintain the orbit and increase its orbit.</p>
 								<p>Modal analysis and Random vibrations testing were performed on the CubeSat frame and with the thrusters mounted inside CubeSat. There are a total of 8 thrusters that are used for orbit transfer and also achieve three-axis control. PTFE(Teflon) is used as the propellant, two tungsten plated copper are used which act as electrodes.</p>
@@ -268,6 +317,145 @@
 							</table>
 						</article>
 
+						<!-- Visualization-->
+					
+						<article id="Visualization">
+							<h2 class="major">Brain Visualization</h2>
+							<h3 class="major">Brain</h3>
+							<p>You can view this model in AR enabled devices <br> (example: 📱) </p>
+						<body>
+							<model-viewer 
+    							id="Brain-camera-view"
+    							alt="Brain" 
+									src="assets/models/Brain.glb" ar ios src="assets/models/Brain1.usdz"
+									
+									shadow-intensity="0" 
+									
+									camera-controls touch-action="pan-y"
+									camera-orbit="-8.142746deg 80deg 200m" 
+									camera-target="1m 0.07m 200m" 
+									field-of-view="45deg" 
+									min-field-of-view="25deg" 
+									max-field-of-view="45deg" 
+									interpolation-decay="200"
+									min-camera-orbit="auto auto 5%"
+									xr-environment
+									allowfullscreen>
+									
+									
+									<button class="Hotspot" slot="hotspot-1" 
+										data-position="44.846123210464896m -17.5058028340016m 52.007572538258216m" 
+										data-normal="0.5802178864978054m 0.3561804466197153m 0.732449789155407m"
+										data-orbit="50.94862deg 84.56856deg 300m" 
+										data-visibility-attribute="visible">
+										<div class="HotspotAnnotation" >Left Hemisphere</div>
+									</button><button class="Hotspot" slot="hotspot-2" 
+										data-position="-2.0404534700851737m -140.9649154417384m 0.7843757940213436m"
+										data-normal="0.010415122921684656m 0.13575987385229632m 0.9906870251830974m"
+										data-orbit="0deg 90deg 150.335197m"
+										data-visibility-attribute="visible">
+										<div class="HotspotAnnotation">Brain Stem</div>
+									</button><button class="Hotspot" slot="hotspot-3"
+										data-position="-57.323473629452735m -11.747836848431021m -4.9687700125955185m" 
+										data-normal="-0.9741858789651724m 0.144221724904277m 0.17367201067094706m"
+										data-orbit="-50.94862deg 86.56856deg 300m" 
+										data-visibility-attribute="visible">
+										<div class="HotspotAnnotation">Right Hemisphere</div>
+									</button>
+									<div class="progress-bar hide" slot="progress-bar">
+										<div class="update-bar"></div>
+									</div>
+									<button slot="ar-button" id="ar-button" >
+										👋 Activate AR
+									</button>
+									<div id="ar-prompt">
+										</div>
+									
+									</model-viewer>
+									<script type="module">
+										const modelViewer2 = document.querySelector("#Brain-camera-view");
+										const annotationClicked = (annotation) => {
+										  let dataset = annotation.dataset;
+										  modelViewer2.cameraTarget = dataset.target;
+										  modelViewer2.cameraOrbit = dataset.orbit;
+										  modelViewer2.fieldOfView = '45deg';
+										}
+									  
+										modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+										  hotspot.addEventListener('click', () => annotationClicked(hotspot));
+										});
+									  </script>
+									  <style  type="text/css">
+										.view-button {
+										background: #ebfc05;
+										border-radius: 1px;
+										border: none;
+										box-sizing: border-box;
+										box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+										color: rgb(46, 219, 12);
+										display: block;
+										font-family: Futura, Helvetica Neue, sans-serif;
+										font-size: 1px;
+										font-weight: 8;
+										max-width: 10px;
+										overflow-wrap: break-word;
+										padding: 0.5em 1em;
+										position: absolute;
+										width: max-content;
+										height: max-content;
+										transform:translate3d(-50%, -50%, 0);
+									  }
+									</style>
+									 <button id="fullscreen-button">View Fullscreen</button>
+    
+									 <script>
+										const fullscreenButton = document.getElementById('fullscreen-button');
+										const modelViewer = document.getElementById('Brain-camera-view');
+										let fullscreenMode = false;
+									
+										fullscreenButton.addEventListener('click', () => {
+										  if (!fullscreenMode) {
+											enterFullscreen();
+										  } else {
+											exitFullscreen();
+										  }
+										});
+										
+										function enterFullscreen() {
+										  const skyboxImage = " "; // Replace with the URL of your skybox image
+										  modelViewer.setAttribute('environment-image', skyboxImage);
+									
+										  if (modelViewer.requestFullscreen) {
+											modelViewer.requestFullscreen();
+										  } else if (modelViewer.mozRequestFullScreen) {
+											modelViewer.mozRequestFullScreen();
+										  } else if (modelViewer.webkitRequestFullscreen) {
+											modelViewer.webkitRequestFullscreen();
+										  } else if (modelViewer.msRequestFullscreen) {
+											modelViewer.msRequestFullscreen();
+										  }
+									
+										  fullscreenMode = true;
+										}
+										
+										function exitFullscreen() {
+										  modelViewer.removeAttribute('environment-image');
+									
+										  if (document.exitFullscreen) {
+											document.exitFullscreen();
+										  } else if (document.mozCancelFullScreen) {
+											document.mozCancelFullScreen();
+										  } else if (document.webkitExitFullscreen) {
+											document.webkitExitFullscreen();
+										  } else if (document.msExitFullscreen) {
+											document.msExitFullscreen();
+										  }
+									
+										  fullscreenMode = false;
+										}
+									  </script>	
+							</article>
+
 						<!-- Certificates -->
 							<article id="Certificates">
 								<h2 class="major">Certificates</h2>
@@ -325,8 +513,7 @@
 								<h2 class="major">About</h2>
 								<span class=""><img src="images/Sarvesh.png" width="400px" height="400px" alt="" /></span>
 								
-								<p>Hi! I'm Sarvesh, and I recently graduated with a B.tech in Aerospace Engineering from ACS College of Engineering, I'm passionate
-									about spaceflight and rocketry. I am willing to pursue a master's (MSc) in Aerospace Engineering to satisfy my curiosity and love for research.</p>
+								<p>Hello there! My name is Sarvesh and I'm currently pursuing my Masters in Aerospace Engineering at the Technical University of Munich. I have a huge interest in spaceflight and rocketry and find it absolutely fascinating. It's amazing to see how much we've been able to achieve in this field and I can't wait to see what the future holds!</p>
 							</article>
 
 						<!-- Contact -->
@@ -345,18 +532,18 @@
 								</ul>
 								<ul class="icons">
 									
-									<li><a href="+91-8971460454" class="fa fa-phone"><span class="label"></span></a></li>
-									<a href="+91-8971460454"><span class="label"></span>+91-8971460454</a></li>
+									<li><a href="+49-01786576029" class="fa fa-phone"><span class="label"></span></a></li>
+									<a href="+49-01786576029"><span class="label"></span>+49-01786576029</a></li>
 								</ul>
 								
 								<ul class="icons">
 									<li>
 										<a href = "location" class="fa fa-map-marker"><span class="label"></span></a></li>
-										<a href = "https://www.google.com/maps/@13.0118572,77.5390892,16.25z?hl=en" ><span class="label"></span>Bangalore, Karnataka, INDIA</a></li>	
+										<a href = "https://www.google.com/maps/@13.0118572,77.5390892,16.25z?hl=en" ><span class="label"></span>Munich, Germany</a></li>	
 									</ul>
 								<ul class="icons">
 									<li>
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62204.727483449504!2d77.5729259585055!3d12.984929883563389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1634562891490!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85186.27092119724!2d11.519860478178334!3d48.147437056885956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich!5e0!3m2!1sen!2sde!4v1684061387936!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 										
 								</ul>
 							</article>
@@ -616,13 +803,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- BG -->
 			<div id="bg"></div>
-
+			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
 
+			
 	</body>
 </html>
