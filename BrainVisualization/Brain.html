@@ -48,6 +48,21 @@
     .button-container button:hover {
       background-color: #87a548;
     }
+    .back-to-home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      background-color: #141414;
+      color: #fafcff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .back-to-home-button:hover {
+      background-color: #87a548;
+    }
   </style>
 </head>
 <body>
@@ -73,6 +88,15 @@
 
     function open3DPage() {
       window.location.href = "3d.html";
+    }
+  </script>
+  <button onclick="goToHomePage()" class="back-to-home-button">Back to Homepage</button>
+  
+  
+
+  <script>
+    function goToHomePage() {
+      window.location.href = "../index.html";
     }
   </script>
 </body>
